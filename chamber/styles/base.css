@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #357594;
+    --primary-hover-color: #69bee9;
+    --secondary-color: #5e9fba;
+    --accent1-color: #8ed1fc;
+    --accent2-color: #0693e3;
+
+    --heading-font: "Poppins", serif;
+    --paragraph-font: "Karla", serif;
+
+    --text-color: #6a6f72;
+    --header-bg-color: linear-gradient(to right, white, rgb(95, 223, 240), rgb(26, 218, 218));
+
+    --nav-background-color: #1f485d;
+    --nav-link-color: White;
+    --nav-hover-link-color: #f5cf89;
+    --nav-hover-background-color: var(--accent1-color);
+
+    --course-completed-background: #7ad48f;
+
+    --background-color: rgb(252, 246, 246);
+    --section-background: White;
+    --max-width: 960px
+}
+
+* {
+    font-family: var(--paragraph-font);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header,
+main,
+footer {
+    max-width: 100%;
+}
+
+header {
+    background: var(--header-bg-color);
+    display: block;
+    width: 100%;
+}
+
+.logo-commerce {
+    border-radius: 5px;
+    border: 2px solid var(--secondaryColor);
+    margin: 2px;
+    cursor: pointer;
+}
+
+#title {
+    font-size: 50%;
+    text-align: center;
+    top: 15px;
+    margin-left: 120px;
+    position: absolute;
+}
+
+
+/*Nav*/
+#menu {
+    font-size: 2.5rem;
+    border: 0;
+    background: none;
+    color: var(--text-color);
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    display: flex;
+}
+.active{
+    text-decoration: underline !important;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+#navMenu.open a {
+    display: block;
+    font-weight: 400;
+}
+
+#navMenu {
+    background-color: var(--backgroundColor);
+    display: flex;
+    flex-direction: column;
+}
+
+#navMenu ul {
+    /* list-style: none; */
+    display: block;
+    width: 100%;
+}
+
+#navMenu a {
+    /* display: none; */
+    text-align: right;
+    padding: 15px 0;
+    text-decoration: none;
+    font-size: 150%;
+    margin-right: 1rem;
+}
+
+#navMenu a:hover {
+    background-color: transparent;
+    color: var(--primaryColor);
+}
+
+/*main*/
+main{
+    min-height: 400px;
+}
+
+
+ /*Footer*/
+
+ footer {
+    background: var(--header-bg-color);
+    font-size: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-color);
+}
+
+#social-media {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.logo {
+    width: 50px;
+    margin: 0;
+}
+
+#footer-info {
+    margin-bottom: 0;
+}
+
+#information {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 821px) {
+
+    body {
+        max-width: 1500px;
+        margin: 0 auto;
+
+    }
+    header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        /* overflow-x: hidden; */
+        color: var(--textColor);
+    }
+
+    .container-logo{
+        margin-left: 3rem;
+    }
+
+    #title {
+        font-size: 90%;
+        text-align: center;
+        position: inherit;
+        margin: 0 auto;
+        grid-column: 2 / 3;
+    }
+
+    #title h1{
+        font-weight: bold;
+        color: black;
+        box-shadow: #5e9fba;
+    }
+
+    #title p{
+        font-style: italic;
+        border: 1px solid;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #navMenu {
+        font-size: 100%;
+        /* grid-column: 3 / 4; */
+        max-width: 800px;
+    }
+
+    #navMenu ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        max-width: 800px;
+        justify-content: space-around;
+    }
+
+    #navMenu ul li {
+        padding: 3rem;
+        font-weight: 700;
+        color: var(--textColor);
+    }
+
+    #navMenu ul li a {
+        display: block;
+        text-align: center;     
+        text-decoration: none;
+    }
+
+    #navMenu ul li:hover {
+        background-color: var(--thirdColor);
+        color: var(--textColor);
+    }
+
+    #navMenu ul li:hover a {
+        color: var(--secondaryColor);
+    }
+}
