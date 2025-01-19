@@ -1,3 +1,12 @@
+
+function getdate() {
+    const currentYear = new Date().getFullYear();
+    document.getElementById('currentyear').appendChild(document.createTextNode(currentYear));
+
+    const lastModifiedDate = formatDateTime(new Date(document.lastModified));
+    document.getElementById('lastModified').appendChild(document.createTextNode(lastModifiedDate));
+}
+
 function loadClients() {
     const directory = document.getElementById('directory');
     clients.forEach(client => {
@@ -22,7 +31,7 @@ function loadClients() {
     });
 }
 
-window.onload = loadClients, setView('grid');
+
 
 
 function setView(view) {
@@ -41,6 +50,25 @@ function setView(view) {
         buttonList.classList.add('activebt');
     }
 }
+
+
+window.onload = loadClients, getdate(), setView('grid');
+
+
+
+function formatDateTime(receivedDate) {
+  
+    const day = String(receivedDate.getDate()).padStart(2, "0");
+    const month = String(receivedDate.getMonth() + 1).padStart(2, "0");
+    const year = receivedDate.getFullYear();
+  
+    const hours = String(receivedDate.getHours()).padStart(2, "0");
+    const minutes = String(receivedDate.getMinutes()).padStart(2, "0");
+    const seconds = String(receivedDate.getSeconds()).padStart(2, "0");
+  
+    return `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
+  }
+
 
 
 const clients = [
