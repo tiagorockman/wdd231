@@ -22,16 +22,23 @@ function loadClients() {
     });
 }
 
-window.onload = loadClients;
+window.onload = loadClients, setView('grid');
+
 
 function setView(view) {
     const directory = document.getElementById('directory');
+    const buttonGrid = document.querySelector('#grid');
+    const buttonList = document.querySelector('#list');
     if (view === 'grid') {
         directory.classList.add('grid-view');
         directory.classList.remove('list-view');
+        buttonGrid.classList.add('activebt');
+        buttonList.classList.remove('activebt');
     } else if (view === 'list') {
         directory.classList.add('list-view');
         directory.classList.remove('grid-view');
+        buttonGrid.classList.remove('activebt');
+        buttonList.classList.add('activebt');
     }
 }
 

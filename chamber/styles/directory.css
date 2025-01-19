@@ -10,6 +10,18 @@
     cursor: pointer;
 }
 
+.activebt{
+    background-color: var(--secondary-color);
+    color: white;
+    animation-name: change;
+    animation-duration: 4s;
+}
+
+@keyframes change {
+    from {background-color: #ccc;}
+    to {background-color: var(--secondary-color);}
+  }
+
 /*directory grid*/
 
 .directory {
