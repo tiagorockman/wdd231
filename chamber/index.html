@@ -17,7 +17,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
     <link rel="icon" href="favicon.ico">
-    <!-- <script async src="scripts/getdates.js"></script> -->
+
+    <!--Open Graphs-->
+    <meta property="og:title" content="Hames Snow | Chamber of Commerce | Budapest | Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/tiagorockman/wdd231/refs/heads/main/chamber/images/logo.jpg">
+    <meta property="og:url" content="https://tiagorockman.github.io/wdd231/chamber/directory.html">
+
+    <script defer src="scripts/directory.js"></script>
+
+
     <title>WDD 231: Web Frontend Development I - Tiago Neves</title>
 </head>
 
@@ -29,6 +39,7 @@
         <div id="title">
             <h1>Hames Snow</h1>
             <p>Chamber of Commerce</p>
+            <h3>Budapeste</h3>
         </div>
         <!-- <button id="menu"></button> -->
         <nav id="navMenu">
@@ -41,30 +52,64 @@
         </nav>
     </header>
     <main>
-        <footer>
-            <section id="information">
-                <h2>Hames Snow Chamber of Commerce</h2>
-                <p>10 Rue De La Palx</p>
-                <p>Hames Snow, Mail 99</p>
-                <p>info@hamesnow.org</p>
-                <p>(223) 555-2300</p>
-            </section>
-            <section id="social-media">
-                <img class="logo" src="images/youtube.png" alt="youtube" width="50" height="50" loading="lazy">
-                <img class="logo" src="images/twitter.png" alt="x" width="50" height="50" loading="lazy">
-                <img class="logo" src="images/linkedin.png" alt="linkedin" height="50" width="50" loading="lazy">
-            </section>
-            <section id="footer-info">
-                <h2>WDD231 Class Project</h2>
-                <p>Tiago Neves Sousa</p>
-                <p>
-                    <span>&copy;</span>
-                    <span id="currentyear"></span>
-                </p>
-                <p>Hames Snow Chamber of Commerce</p>
-                <p id="lastModified"></p>
-            </section>
-        </footer>/main>
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 820px)" srcset="images/house-small.webp">
+                <img src="images/house.webp" alt="House of Chamber">
+            </picture>
+        </section>
+        <span><a href="/" class="join-us-button">Join Us</a></span>
+        <div class="section-header"> <h3>Home</h3></div>
+        <section class="information">
+            <div class="events">
+                <div class="data-header">Events</div>
+                <div class="data-item"> March 15, 2025 - Day of the Hungarian Revolution and the Freedom Fight</div>
+                <div class="data-item">April 14,2025 - Good Friday</div>
+                <div class="data-item">May 1,2025 - Confraternization</div>
+            </div>
+            <div class="weather">
+                <div class="data-header">Weather</div>
+                <div class="weather">
+                    <img src="images/weather.svg" alt="Weather">
+                </div>
+                <div class="data-item">Sunny, 23°C</div>
+                <div class="data-item">Humidity: 50%</div>
+            </div>
+            <div class="weather-forecast">
+                <div class="data-header">Weather Forecast</div>
+                <div class="data-item">Tomorrow: Cloudy, 19°C</div>
+                <div class="data-item">Day After: Rain, 16°C</div>
+            </div>
+        </section>
+        <section>
+            <div class="spotlights" id="directory"></div>
+        </section>
+    </main>
+    <footer>
+        <section id="information">
+            <h2>Hames Snow Chamber of Commerce</h2>
+            <p>Hőgyes Endre u. 3, 1092 Hungria</p>
+            <p>Mail 99, Budapest</p>
+            <p>info@hamesnow.org</p>
+            <p>(223) 555-2300</p>
+        </section>
+        <section id="social-media">
+            <img class="logo" src="images/youtube.png" alt="youtube" width="50" height="50" loading="lazy">
+            <img class="logo" src="images/twitter.png" alt="x" width="50" height="50" loading="lazy">
+            <img class="logo" src="images/linkedin.png" alt="linkedin" height="50" width="50" loading="lazy">
+        </section>
+        <section id="footer-info">
+            <h2>WDD231 Class Project</h2>
+            <p>Tiago Neves Sousa</p>
+            <p>
+                <span>&copy;</span>
+                <span id="currentyear"></span>
+            </p>
+            <p>Hames Snow Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+
 </body>
 
 </html>
