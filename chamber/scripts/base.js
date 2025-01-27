@@ -1,4 +1,3 @@
-import { clients } from "./clients.js";
 
 export function setDataFooter() {
     const currentYear = new Date().getFullYear();
@@ -39,3 +38,15 @@ function formatDateTime(receivedDate) {
   
     return `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
   }
+
+  export function setHambugerButton(){
+
+    const hamButton = document.querySelector("#menu");
+    const navigation = document.querySelector("#navMenu");
+    hamButton.addEventListener('click', () => {
+        navigation.classList.toggle('open');
+        hamButton.classList.toggle('open');
+    });
+
+}
+

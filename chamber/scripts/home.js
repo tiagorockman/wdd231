@@ -1,5 +1,9 @@
 import {clients} from './clients.js';
-import { setDataFooter } from './base.js';
+import { setDataFooter,  setHambugerButton } from './base.js';
+
+//Initial calls
+setHambugerButton();
+setDataFooter();
 
 const selectUniqueRandom = (arr, num) => {
   const result = [];
@@ -54,12 +58,10 @@ async function apiFetch() {
       const response = await fetch(url);
       const response2 = await fetch(urlForecast);
       if (response.ok && response2.ok) {
-          console.log(response.ok);
+
           const data = await response.json();
           const data2 = await response2.json();
 
-          console.log(data);
-          console.log(data2);
 
           displaWeatherResult(data);
           displayForecastWeather(data2)
@@ -138,6 +140,6 @@ function capitalizeEveryWord(text) {
 
 
 const newClientsList = selectUniqueRandom(clients, 3);
-setDataFooter();
+
 loadClients();
 apiFetch();

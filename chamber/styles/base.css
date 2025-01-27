@@ -69,6 +69,7 @@ header {
     font-size: 4vw;
     text-align: center;
     margin-left: 28%;
+    top: 2%;
     position: absolute;
 }
 
@@ -119,7 +120,7 @@ header {
 }
 
 #navMenu a {
-    /* display: none; */
+    display: none;
     text-align: right;
     padding: 15px 0;
     text-decoration: none;
@@ -148,6 +149,7 @@ footer {
     align-items: center;
     justify-content: space-around;
     color: var(--text-color);
+    padding: 5px;
 }
 
 #social-media {
@@ -174,6 +176,11 @@ footer {
     object-fit: cover;
 }
 
+.join-us-button {
+    margin: 10px;
+}
+
+/* Large Views */
 @media screen and (min-width: 821px) {
 
     body {
@@ -297,13 +304,6 @@ footer {
 
         50% {
             transform: translate(0, -50%) translateY(5px);
-        }
-    }
-
-
-    @media screen and (max-width: 768px) {
-        .join-us-button {
-            margin: 10px;
         }
     }
 
