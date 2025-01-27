@@ -30,7 +30,7 @@
     --section-background: #f7f7f7;
     --max-width: 960px;
 
-    --card-title-color: #ff3b3b;
+    --card-title-color: #b22222;
 }
 
 * {
@@ -68,7 +68,6 @@ header {
 #title {
     font-size: 4vw;
     text-align: center;
-    top: 15px;
     margin-left: 28%;
     position: absolute;
 }
