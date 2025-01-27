@@ -7,7 +7,7 @@
 :root {
     --primary-color: #357594;
     --primary-hover-color: #69bee9;
-    --secondary-color: #5e9fba;
+    --secondary-color: #337a97;
     --accent1-color: #8ed1fc;
     --accent2-color: #0693e3;
 
@@ -27,10 +27,10 @@
     --a-link-color: #8b56e8;
 
     --background-color: rgb(252, 246, 246);
-    --section-background: White;
+    --section-background: #f7f7f7;
     --max-width: 960px;
 
-    --card-title-color: #ff6b6b;
+    --card-title-color: #ff3b3b;
 }
 
 * {
