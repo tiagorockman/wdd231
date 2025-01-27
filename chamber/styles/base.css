@@ -66,9 +66,9 @@ header {
 }
 
 #title {
-    font-size: 4vw;
+    font-size: 3.1vw;
     text-align: center;
-    margin-left: 28%;
+    margin-left: 29%;
     top: 2%;
     position: absolute;
 }
@@ -213,7 +213,7 @@ footer {
         color: black;
     }
 
-    #title p {
+    #title h2 {
         font-style: italic;
         border: 1px solid;
     }
