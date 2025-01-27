@@ -66,14 +66,14 @@ header {
 }
 
 #title {
-    font-size: 50%;
+    font-size: 4vw;
     text-align: center;
     top: 15px;
-    margin-left: 120px;
+    margin-left: 28%;
     position: absolute;
 }
 
-#title h3{
+#title h3 {
     font-style: italic;
 }
 
@@ -89,7 +89,8 @@ header {
     top: 5px;
     display: flex;
 }
-.active{
+
+.active {
     text-decoration: underline !important;
 }
 
@@ -133,14 +134,14 @@ header {
 }
 
 /*main*/
-main{
+main {
     min-height: 400px;
 }
 
 
- /*Footer*/
+/*Footer*/
 
- footer {
+footer {
     background: var(--header-bg-color);
     font-size: 80%;
     display: flex;
@@ -180,6 +181,7 @@ main{
         max-width: 1500px;
         margin: 0 auto;
     }
+
     header {
         display: flex;
         align-items: center;
@@ -188,25 +190,25 @@ main{
         color: var(--textColor);
     }
 
-    .container-logo{
+    .container-logo {
         margin-left: 3rem;
     }
 
     #title {
-        font-size: 90%;
+        font-size: 1rem;
         text-align: center;
         position: inherit;
         margin: 0 auto;
         grid-column: 2 / 3;
     }
 
-    #title h1{
+    #title h1 {
         font-weight: bold;
         color: black;
         box-shadow: #5e9fba;
     }
 
-    #title p{
+    #title p {
         font-style: italic;
         border: 1px solid;
     }
@@ -238,7 +240,7 @@ main{
 
     #navMenu ul li a {
         display: block;
-        text-align: center;     
+        text-align: center;
         text-decoration: none;
     }
 
@@ -274,105 +276,37 @@ main{
         right: 10%;
         transform: translate(0, -50%);
         animation: float 3s ease-in-out infinite;
-      }
-  
-      .join-us-button:hover {
+    }
+
+    .join-us-button:hover {
         background: var(--primary-hover-color);
         color: #ffffff;
         transform: scale(1.1);
         box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-      }
-  
-      .join-us-button:active {
+    }
+
+    .join-us-button:active {
         transform: scale(1.05);
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-      }
+    }
 
-      @keyframes float {
-        0%, 100% {
-          transform: translate(0, -50%) translateY(-5px);
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translate(0, -50%) translateY(-5px);
         }
+
         50% {
-          transform: translate(0, -50%) translateY(5px);
+            transform: translate(0, -50%) translateY(5px);
         }
-      }
+    }
 
-      /*card management*/
-      .section-header {
-        text-align: center;
-        margin: 20px 0;
-      }
-  
-      .section-header h3 {
-        font-size: clamp(1.5rem, 2.5vw, 3rem);
-        font-weight: bold;
-        color: var(--secondary-color);
-        text-transform: uppercase;
-      }
-  
-      .information {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-  
-      .information > div {
-        background: #ffffff;
-        border-radius: 12px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-      }
-  
-      .events {
-        background: var(--accent2-color);
-      }
-  
-      .data-header {
-        font-size: 1.2em;
-        font-weight: bold;
-        color: var(--card-title-color);
-        margin-bottom: 10px;
-        text-align: center;
-      }
 
-      .events{
-        display: flex;
-        flex-direction: column;
-      }
-
-      .events .data-item::before{
-        content: "• ";
-      }
-  
-      .data-item {
-        font-size: 1rem;
-        margin-bottom: 8px;
-      }
-  
-      .weather,
-      .weather-forecast {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-  
-      .weather {
-        background: #eaf7f9;
-      }
-  
-      .weather-forecast {
-        background: #f5e8e6;
-      }
-  
-      @media (max-width: 768px) {
-        .information {
-          grid-template-columns: 1fr;
+    @media screen and (max-width: 768px) {
+        .join-us-button {
+            margin: 10px;
         }
-      }
+    }
 
-      
 }
