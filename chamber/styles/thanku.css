@@ -1,0 +1,12 @@
+#result {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    background-color: var(--section-background);
+    padding: 1rem;
+    border: solid 5px var(--secondaryColor);
+    border-radius: 15px;
+    z-index: 1;
+    margin-top: 0.5%;
+    padding-left: 2%;
+}

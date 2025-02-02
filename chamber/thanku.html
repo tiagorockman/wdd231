@@ -9,7 +9,8 @@
         Project">
     <meta name="author" content="Tiago Neves Sousa">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/thanku.css">
     <link rel="icon" href="favicon.ico">
     
     <!--Fontes Google-->
@@ -29,7 +30,8 @@
         content="https://raw.githubusercontent.com/tiagorockman/wdd231/refs/heads/main/chamber/images/logo.jpg">
     <meta property="og:url" content="https://tiagorockman.github.io/wdd231/chamber/directory.html">
 
-    <script type="module" src="scripts/home.js"></script>
+    <script type="module" src="scripts/base.js"></script>
+    <script type="module" src="scripts/thanku.js"></script>
     <title>WDD 231: Web Frontend Development I - Tiago Neves</title>
 </head>
 
@@ -46,7 +48,7 @@
        <button id="menu" aria-label="Menu"></button>
         <nav id="navMenu">
             <ul>
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
@@ -54,43 +56,11 @@
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <picture>
-                <source media="(max-width: 820px)" srcset="images/house-small.webp">
-                <img src="images/house.webp" alt="House of Chamber">
-            </picture>
-        </section>
-        <span><a href="join.html" class="join-us-button" aria-label="Join Us">Join Us</a></span>
-        <div class="section-header"> <h3>Home</h3></div>
-        <section class="information">
-            <div class="events">
-                <div class="data-header">Events</div>
-                <div class="data-item"> March 15, 2025 - Day of the Hungarian Revolution and the Freedom Fight</div>
-                <div class="data-item">April 14,2025 - Good Friday</div>
-                <div class="data-item">May 1,2025 - Confraternization</div>
-            </div>
-            <div class="weather">
-                <div class="data-header">Weather</div>
-                <div class="weather">
-                    <img id="weather-icon-temperature" src="#" alt="Weather">
-                </div>
-                <div class="data-item" id="temp"></div>
-                <div class="data-item" id="descKindWeather"></div>
-                <div class="data-item" id="high"></div>
-                <div class="data-item" id="low"></div>
-                <div class="data-item" id="humidity"></div>
-                <div class="data-item" id="sunrise"></div>
-                <div class="data-item" id="sunset"></div>
-            </div>
-            <div class="weather-forecast">
-                <div class="data-header">Weather Forecast</div>
-                <div class="data-item" id="tomorrow"></div>
-                <div class="data-item" id="dayafer"></div>
-                <div class="data-item" id="inthreedays"></div>
-            </div>
-        </section>
-        <section>
-            <div class="spotlights" id="directory"></div>
+        <video autoplay muted loop id="background-form">
+            <source src="videos/background.mp4" type="video/mp4">
+        </video>
+        <section id="result">
+            
         </section>
     </main>
     <footer>

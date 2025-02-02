@@ -31,6 +31,7 @@
     --max-width: 960px;
 
     --card-title-color: #b22222;
+    --textColor: black;
 }
 
 * {
@@ -42,7 +43,7 @@
 }
 
 body {
-    max-width: 100%;
+    max-width: var(--max-width);
     overflow-x: hidden;
 }
 
@@ -138,7 +139,6 @@ main {
     min-height: 400px;
 }
 
-
 /*Footer*/
 
 footer {
@@ -183,8 +183,12 @@ footer {
 /* Large Views */
 @media screen and (min-width: 821px) {
 
+:root{
+    --max-width: 1500px
+}
+
     body {
-        max-width: 1500px;
+        max-width: var(--max-width);
         margin: 0 auto;
     }
 

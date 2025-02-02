@@ -91,6 +91,8 @@ window.onload = function() {
     const totalCoursesEl = document.getElementById("total-courses");
     const totalCreditsEl = document.getElementById("total-credits");
 
+
+
     function renderCourses(filter) {
       coursesContainer.innerHTML = ""; //cleaning the div container where the course will be located
 
@@ -106,10 +108,16 @@ window.onload = function() {
         button.classList.add("button");
         button.classList.add("courses");
         button.textContent = `${course.subject} ${course.number} - ${course.title}`;
+
+        //Event for modal
+        coursesContainer.addEventListener('click', () => displayCourseDetails(course));
+
         if (course.completed) {
           button.classList.add("completed");
         }
         coursesContainer.appendChild(button);
+
+        
       });
 
       // Update counters
@@ -137,4 +145,25 @@ function formatDateTime(receivedDate) {
     const seconds = String(receivedDate.getSeconds()).padStart(2, "0");
   
     return `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
+  }
+
+const courseDetails = document.getElementById("course-details");
+  function displayCourseDetails(course){
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <button id="closeModal">X</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", ()=>{
+        courseDetails.close();
+    });
+
+
   }
