@@ -6,17 +6,13 @@ setDataFooter();
 
 const url = window.location.href;
 const container = document.getElementById('result');
-console.log(url);
 
 const infoFromForm = url.split('?');
-console.log(infoFromForm);
 
 const formData = infoFromForm[1].split('&');
-console.log(formData);
 
 function show(word) {
     let result = '';
-    console.log(word);
 
     formData.forEach((element) => {
         console.log(element);
@@ -30,7 +26,6 @@ function show(word) {
 function date(word) {
     let result = '';
     let end = '';
-    console.log(word);
 
     formData.forEach((element) => {
         console.log(element);
@@ -38,7 +33,6 @@ function date(word) {
             result = element.split('=')[1];
             result = decodeURIComponent(result);
             end = result.replace(/\+/g, ' ');
-            console.log(end);
         } // end of the if
     });
     return end;
@@ -46,7 +40,6 @@ function date(word) {
 
 function email(word){
     let result = '';
-    console.log(word);
     
     formData.forEach((element) => {
         console.log(element);
