@@ -1,0 +1,64 @@
+:root {
+    --body: #110920;
+    --text: #fff;
+    --link: #fff;
+    --link-hover: #03c1ef;
+    --primary: #03c1ef;
+    --secondary: #8c3596;
+    --tertiary: #666;
+    --dark: #000;
+    --light: #fff;
+    --gray: #1b0f30;
+    --gray-light: #311e54;
+    --gray-dark: #eee;
+
+    --main-headers-font: "Oswald", serif;
+    --body-text: "Roboto", serif;
+}
+
+body {
+    font-family: var(--body-text);
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--body);
+    color: var(--text);
+}
+h1{
+    font-family: var(--main-headers-font);
+}
+h1, h2 {
+    color: var(--primary);
+}
+a{
+    background-color: #fff;
+    color: var(--gray-light);
+}
+.container {
+    background: var(--gray);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.wireframe {
+    border: 1px solid var(--tertiary);
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.wireframe p{
+    font-size: 3rem;
+}
+
+.wireframe img{
+    max-width: 40%;
+    height: auto;
+}
+
+.oswald{
+    font-family: var(--main-headers-font);
+}
+
+.roboto{
+    font-family: var(--body-text);
+}
