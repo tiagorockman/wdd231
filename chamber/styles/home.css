@@ -9,7 +9,7 @@ main{
 }
 
 .section-header{
-  order: 1,
+  order: 1;
 }
 
 /*card management*/
