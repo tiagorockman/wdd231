@@ -73,6 +73,11 @@ button:hover {
             "item5 item6"
             "item7 item8";
     }
+    .card figure img:hover {
+        transform: scale(1.1); /* Slight zoom effect */
+        filter: brightness(1.2); /* Brightens the image */
+    }
+   
 }
 
 /* Large screens (1025px and above) */
@@ -82,5 +87,10 @@ button:hover {
         grid-template-areas:
             "item1 item2 item3 item4"
             "item5 item6 item7 item8";
+    }
+
+    .card figure img:hover {
+        transform: scale(1.1); /* Slight zoom effect */
+        filter: brightness(1.2); /* Brightens the image */
     }
 }
