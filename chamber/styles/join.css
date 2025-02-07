@@ -23,6 +23,11 @@ main {
     width: 100%;
 }
 
+.section-header{
+    margin: 0px;
+    display: none;
+}
+
 
 footer {
     position: relative;
