@@ -66,6 +66,8 @@ header {
     cursor: pointer;
 }
 
+/*title*/
+
 #title {
     font-size: 3.1vw;
     text-align: center;
@@ -74,7 +76,25 @@ header {
     position: absolute;
 }
 
+#title {
+    font-size: 1rem;
+    text-align: center;
+    position: inherit;
+    margin: 0 auto;
+    grid-column: 2 / 3;
+}
+
+#title h2 {
+    font-weight: bold;
+    color: black;
+}
+
 #title h3 {
+    font-style: italic;
+    border: 1px solid;
+}
+
+#title h4 {
     font-style: italic;
 }
 
@@ -204,23 +224,7 @@ footer {
         margin-left: 3rem;
     }
 
-    #title {
-        font-size: 1rem;
-        text-align: center;
-        position: inherit;
-        margin: 0 auto;
-        grid-column: 2 / 3;
-    }
-
-    #title h1 {
-        font-weight: bold;
-        color: black;
-    }
-
-    #title h2 {
-        font-style: italic;
-        border: 1px solid;
-    }
+  
 
     #menu {
         display: none;
