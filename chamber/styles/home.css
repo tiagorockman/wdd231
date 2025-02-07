@@ -9,21 +9,11 @@ main{
 }
 
 .section-header{
-  order: 1;
+  order: 0;
 }
 
-/*card management*/
-.section-header {
-    margin: 20px 0;
-  }
 
-  .section-header h1 {
-    font-size: clamp(1.5rem, 2.5vw, 3rem);
-    font-weight: bold;
-    color: var(--secondary-color);
-    text-transform: uppercase;
-    text-align: center;
-  }
+/*card management*/
 
   .information {
     display: grid;

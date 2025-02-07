@@ -98,8 +98,21 @@ header {
     font-style: italic;
 }
 
+/*section-header*/
 
-/*Nav*/
+.section-header {
+    margin: 20px 0;
+  }
+
+.section-header h1 {
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+  /*Nav*/
 #menu {
     font-size: 2.5rem;
     border: 0;
