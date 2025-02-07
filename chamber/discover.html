@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="WDD 231: Web Frontend Development I
+        Tiago Neves Sousa
+        Project">
+    <meta name="author" content="Tiago Neves Sousa">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="icon" href="favicon.ico">
+    
+    <!--Fontes Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,400;1,100;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+  
+
+    <!--Open Graphs-->
+    <meta property="og:title" content="Hames Snow | Chamber of Commerce | Budapest | Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/tiagorockman/wdd231/refs/heads/main/chamber/images/logo.jpg">
+    <meta property="og:url" content="https://tiagorockman.github.io/wdd231/chamber/directory.html">
+
+    <script type="module"  src="scripts/discover.js"></script>
+    <title>WDD 231: Web Frontend Development I - Tiago Neves</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-logo">
+            <img src="images/logo.jpg" alt="logo" width="100" height="100" loading="lazy">
+        </div>
+        <div id="title">
+            <h1>Hames Snow</h1>
+            <h2>Chamber of Commerce</h2>
+            <h3>Budapeste</h3>
+        </div>
+       <button id="menu" aria-label="Menu"></button>
+        <nav id="navMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#" class="active">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Local Attractions</h1>
+
+        <section class="grid-container">
+            <article class="card item1">
+                <h2>City Museum</h2>
+                <figure>
+                    <img src="https://picsum.photos/210" alt="City Museum">
+                </figure>
+                <address>123 Main Street, Downtown</address>
+                <p>Discover the history and culture of our city at the City Museum, featuring interactive exhibits.</p>
+                <button>Learn More</button>
+            </article>
+    
+            <article class="card item2">
+                <h2>Central Park</h2>
+                <figure>
+                    <img src="https://picsum.photos/200" alt="Central Park">
+                </figure>
+                <address>456 Greenway Blvd</address>
+                <p>Enjoy nature with beautiful walking trails, a lake, and picnic areas.</p>
+                <button>Learn More</button>
+            </article>
+    
+            <article class="card item3">
+                <h2>Aquarium</h2>
+                <figure>
+                    <img src="https://picsum.photos/225" alt="Aquarium">
+                </figure>
+                <address>789 Ocean Ave</address>
+                <p>Explore marine life with interactive exhibits and live feeding shows.</p>
+                <button>Learn More</button>
+            </article>
+    
+            <article class="card item4">
+                <h2>Art Gallery</h2>
+                <figure>
+                    <img src="https://picsum.photos/220" alt="Art Gallery">
+                </figure>
+                <address>321 Canvas St</address>
+                <p>Featuring contemporary and classic art pieces from local and international artists.</p>
+                <button>Learn More</button>
+            </article>
+    
+            <article class="card item5">
+                <h2>Zoo</h2>
+                <figure>
+                    <img src="https://picsum.photos/230" alt="Zoo">
+                </figure>
+                <address>555 Wildlife Way</address>
+                <p>Visit a variety of exotic animals and enjoy daily shows.</p>
+                <button>Learn More</button>
+            </article>
+    
+            <article class="card item6">
+                <h2>Historic Theater</h2>
+                <figure>
+                    <img src="https://picsum.photos/210" alt="Historic Theater">
+                </figure>
+                <address>678 Drama St</address>
+                <p>A beautifully restored theater offering live performances and classic films.</p>
+                <button>Learn More</button>
+            </article>
+    
+            <article class="card item7">
+                <h2>Science Center</h2>
+                <figure>
+                    <img src="https://picsum.photos/195" alt="Science Center">
+                </figure>
+                <address>910 Innovation Drive</address>
+                <p>Hands-on exhibits that make learning about science fun for all ages.</p>
+                <button>Learn More</button>
+            </article>
+    
+            <article class="card item8">
+                <h2>Botanical Gardens</h2>
+                <figure>
+                    <img src="https://picsum.photos/189" alt="Botanical Gardens">
+                </figure>
+                <address>159 Nature Trail</address>
+                <p>Beautifully maintained gardens with seasonal displays and walking paths.</p>
+                <button>Learn More</button>
+            </article>
+        </section>
+        <footer>
+            <section id="information"></section>
+            <section id="social-media">
+                <img class="logo" src="images/youtube.png" alt="youtube" width="50" height="50" loading="lazy">
+                <img class="logo" src="images/twitter.png" alt="x" width="50" height="50" loading="lazy">
+                <img class="logo" src="images/linkedin.png" alt="linkedin" height="50" width="50" loading="lazy">
+            </section>
+            <section id="footer-info">
+                <h2>WDD231 Class Project</h2>
+                <p>Tiago Neves Sousa</p>
+                <p>
+                    <span>&copy;</span>
+                    <span id="currentyear"></span>
+                </p>
+                <p>Hames Snow Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            <p>Last visited on the Page</p>
+                <p id="visitMessage">...</p>
+            </section>
+        </footer>
+   
+</body>
+
+</html>
