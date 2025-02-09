@@ -1,8 +1,11 @@
 import { setDataFooter,  setHambugerButton } from './base.js';
+import { places } from './places.js';
 
 //Initial calls
 setHambugerButton();
 setDataFooter();
+
+displayItems(places);
 
 document.addEventListener("DOMContentLoaded", function () {
     const visitMessage = document.getElementById("visitMessage");
@@ -28,3 +31,33 @@ document.addEventListener("DOMContentLoaded", function () {
         visitMessage.textContent = "Welcome back! It's been more than a week since your last visit.";
     }
 });
+
+function displayItems(places){
+    const sectionContainer = document.querySelector(".grid-container");
+    places.forEach(place=>{
+        const div = document.createElement("div");
+        div.classList.add("card");
+        
+        const img = document.createElement("img");
+        img.src = place.image;
+        img.alt = place.title;
+        img.loading = "lazy";
+        div.appendChild(img)
+
+        const title = document.createElement("h2");
+        title.innerHTML = place.title;
+        div.appendChild(title);
+
+        const address = document.createElement("address");
+        address.innerHTML = place.address;
+        div.appendChild(address);
+
+        const description = document.createElement("p");
+        description.innerHTML = place.description;
+        div.appendChild(description);   
+        
+        sectionContainer.appendChild(div);
+    });
+
+    
+}
