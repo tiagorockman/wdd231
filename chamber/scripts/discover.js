@@ -39,7 +39,7 @@ function displayItems(places){
         div.classList.add("card");
         
         const img = document.createElement("img");
-        img.src = place.image;
+        img.src = `images/discover/${place.image}`;
         img.alt = place.title;
         img.loading = "lazy";
         div.appendChild(img)
@@ -55,6 +55,11 @@ function displayItems(places){
         const description = document.createElement("p");
         description.innerHTML = place.description;
         div.appendChild(description);   
+
+        const learnMore = document.createElement("button");
+        learnMore.innerHTML = "Learn More";
+        learnMore.ariaLabel = "Learn More";
+        div.appendChild(learnMore);
         
         sectionContainer.appendChild(div);
     });
