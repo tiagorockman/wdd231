@@ -1,0 +1,62 @@
+.season-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    padding: 1rem 10px;
+}
+
+.control-btn {
+    padding: 8px 12px;
+    background: linear-gradient(to right, #4a4a4a, #212121);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+
+.control-btn:hover {
+    background: linear-gradient(to right, #5a5a5a, #313131);
+    transform: scale(1.05);
+}
+
+.video-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-card video{
+    max-width: 1152px;
+    height: auto;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    background: #222;
+    width: 90%;
+    height: 450px;
+    max-height: 50vh;
+}
+
+.video-item img {
+    width: 80px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.video-item:hover {
+    background: #333;
+}
+
+
+#infoPlayer {
+    color: var(--text);
+    font-weight: 1rem;
+    padding: 1rem 10%;
+}

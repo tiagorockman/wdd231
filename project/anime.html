@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Anime Hub Portal">
+    <meta name="author" content="Tiago Neves Sousa">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/anime.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <meta property="og:title" content="Anime Hub Portal - Anime">
+    <meta property="og:description"
+        content="Explore the ultimate Anime Hub Portal! Discover trending anime, watch trailers, and stay updated with the latest anime news.">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/tiagorockman/wdd231/refs/heads/main/project/images/logo.webp">
+    <meta property="og:url" content="https://tiagorockman.github.io/wdd231/project/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Anime Hub Portal">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Anime Hub Portal - Anime">
+    <meta name="twitter:description"
+        content="Your gateway to the anime universe! Stay updated with the latest anime news, watch trailers, and explore your favorite series.">
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/tiagorockman/wdd231/refs/heads/main/project/images/logo.webp">
+    <meta name="twitter:site" content="@homeportalhub">
+    <meta name="twitter:creator" content="@homeportalhub">
+
+
+    <script type="module" src="scripts/anime.js"></script>
+    <title>Anime Hub Portal - Anime</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-links">
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Movies</a></li>
+                    <li><a href="anime.html">Animes</a></li>
+                    <li><a href="episodes.html">Episodes</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Animes</a></li>
+                </ul>
+
+                <div class="auth-links">
+                    <a href="" class="btn">Login</a>
+                    <a href="" class="btn signup">Sign Up</a>
+                </div>
+            </div>
+            <div class="hamburger" id="menu"></div>
+
+            <div class="banner">
+                <img id="banner1" src="images/banner1.jpg" alt="Banner 1">
+                <img id="banner2" src="images/banner2.jpg" alt="Banner 2">
+                <img id="banner3" src="images/banner3.jpg" alt="Banner 3">
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section class="content">
+            <div class="anime-info-card">
+                <div class="anime-container">
+                    <div class="anime-banner">
+                        <img src="" alt="Anime Poster" class="anime-poster">
+                    </div>
+                    <div class="anime-info">
+                        <h1 class="anime-title">Anime Name</h1>
+                        <div class="anime-details">
+                            <span class="genre">Action, Adventure</span>
+                            <span class="year">2024</span>
+                            <span class="seasons">3 Seasons</span>
+                            <span class="episodes"><span class="number">Episodes</span></span>
+                        </div>
+                        <p class="anime-description">
+                            This is a placeholder description of the anime. It gives a short summary of the story,
+                            characters, and what makes it interesting.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="season-rating">
+                <span class="season-text">Season</span>
+                <div class="rating">
+                    <span class="star">⭐</span>
+                    <span class="imdb-score">8.7</span>
+                </div>
+            </div>
+
+
+            <!-- WATCH -->
+            <section class="watch-options">
+                <h2>Where to Watch</h2>
+                <div class="separator"></div>
+                <div class="watch-container">
+                    <div class="watch-links">
+                        <a id="crunchyroll-link" target="_blank">
+                            <img loading="lazy"
+                                src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Crunchyroll_Logo.svg"
+                                alt="Crunchyroll">
+                        </a>
+                        <a id="netflix-link" target="_blank">
+                            <img loading="lazy"
+                                src="https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg"
+                                alt="Netflix">
+                        </a>
+                        <a id="youtube-link" target="_blank">
+                            <img loading="lazy"
+                                src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"
+                                alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NEWS -->
+            <section class="news">
+                <h2>News</h2>
+                <div class="separator"></div>
+                <div class="news-container">
+                    <article class="news-card">
+                        <a id="crunchyroll" target="_blank">
+                            <figure>
+                                <img loading="lazy" id="crunchyroll-img" alt="News on Crunchyroll...">
+                            </figure>
+                            <span>News on Crunchyroll...</span>
+                        </a>
+                    </article>
+                    <article class="news-card">
+                        <a id="animesNet" target="_blank">
+                            <figure>
+                                <img loading="lazy" id="animesNet-img" alt="News on AnimeNewsNetwork...">
+                            </figure>
+                            <span>News on AnimeNewsNetwork...</span>
+                        </a>
+                    </article>
+                    <article class="news-card">
+                        <a id="animeNew" target="_blank">
+                            <figure>
+                                <img loading="lazy" id="animeNew-img" alt="News on Animenew...">
+                            </figure>
+                            <span>News on Animenew...</span>
+                        </a>
+                    </article>
+                    <article class="news-card">
+                        <a id="pbs" target="_blank">
+                            <figure>
+                                <img loading="lazy" id="pbs-img" alt="News on PBS...">
+                            </figure>
+                            <span>News on PBS...</span>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+
+
+            <!-- EPISODES -->
+            <section class="episodes">
+                <h2>Episodes</h2>
+                <div class="separator"></div>
+                <div class="episodes-container" id="episodesContainer">
+                </div>
+                <a href="episodes.html">
+                    <div class="load-card" id="loadMoreBtn">
+                        <span class="number">Load more</span>
+                    </div>
+                </a>
+            </section>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="images/logo.webp" alt="Website Logo">
+                <p>watch free anime online</p>
+            </div>
+
+            <div class="footer-center">
+                <p>Copyright @<span id="currentyear"></span> Animehubportal. All rights reserved</p>
+                <p class="disclaimer">This website does not store any files on its server. All content is provided by
+                    third parties.</p>
+            </div>
+
+            <div class="footer-right">
+                <a href="https://facebook.com" target="_blank">
+                    <img loading="lazy" src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img loading="lazy" src="images/insta.png" alt="Instagram">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img loading="lazy" src="images/x.png" alt="Twitter">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
